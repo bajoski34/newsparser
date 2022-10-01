@@ -14,7 +14,7 @@ you need to have the following installed:
 1. run `bash start.sh` in the root directory of the project. This will create the database and tables
 
 # Start Parsing News
-1. run `docker-compose run app php bin/console messenger:consume async` to start worker.
+1. run `docker-compose run app php bin/console messenger:consume async -vv` to start worker.
 2. run the command `docker-compose run app php bin/console app:start-parsing-news --url=''` to start parsing news. The url is the url of the news site you want to parse. The url should be in the format `https://www.example.com`
 3. by default, the application will parse the news from `https://highload.today/category/novosti/`.
 

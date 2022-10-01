@@ -8,5 +8,5 @@ docker-compose run  news-app php bin/console doctrine:database:create --if-not-e
 docker-compose run  news-app php bin/console doctrine:migrations:migrate
 
 # start message worker
-docker-compose run --rm app php bin/console messenger:consume async
+docker-compose run --rm app php bin/console messenger:consume async -vv
 

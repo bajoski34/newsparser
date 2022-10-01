@@ -2,7 +2,7 @@
 
 # Install app dependencies
 docker-compose run app composer install
-#docker-compose run news-node npm install && yarn run dev
+#docker-compose run node npm install && yarn run dev
 # run migrations
 docker-compose run  app php bin/console doctrine:database:create --if-not-exists
 docker-compose run  app php bin/console doctrine:migrations:migrate

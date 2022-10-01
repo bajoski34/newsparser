@@ -10,7 +10,7 @@ you need to have the following installed:
 3. The application will be available at `localhost:8080`
 4. Rabbitmq Admin available at `localhost:15672/`. login with guest/guest credentials
 
-# Setup the database
+# Setup project dependencies and database
 1. run `bash start.sh` in the root directory of the project. This will create the database and tables
 
 # Start Parsing News

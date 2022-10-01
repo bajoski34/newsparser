@@ -44,6 +44,7 @@ class NewsRepository extends ServiceEntityRepository
     {
         return $this->createQueryBuilder('n')
             ->andWhere('n.date_added IS NOT NULL')
+            ->select('n.id, n.title, n.date_updated, n.short_description')
             ->orderBy('n.date_added', 'DESC');
     }
 

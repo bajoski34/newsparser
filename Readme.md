@@ -6,7 +6,7 @@ you need to have the following installed:
 
 # Running the application
 1. Clone the repository
-2. Run `docker-compose up` in the root directory of the project
+2. Run `docker-compose up --build -d` in the root directory of the project
 3. The application will be available at `localhost:8080`
 4. Rabbitmq Admin available at `localhost:15672/`. login with guest/guest credentials
 

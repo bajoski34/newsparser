@@ -101,4 +101,8 @@ vendor/
 node_modules/
 
 # Symfony
-/public/uploads/
+app/public/uploads/
+app/var/*
+app/vendor
+app/node_modules/
+

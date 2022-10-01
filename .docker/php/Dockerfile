@@ -11,11 +11,14 @@ RUN apt-get update && apt-get install -y zlib1g-dev g++ git libicu-dev zip libzi
 
 WORKDIR /var/www/project
 
-COPY ../start.sh /
 
-RUN chmod +x /start.sh
 
-ENTRYPOINT ["/start.sh"]
+#COPY ../start.sh /
+#
+#RUN chmod +x /start.sh
+#
+#ENTRYPOINT ["/start.sh"]
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+#CMD ["composer", "install"]

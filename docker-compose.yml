@@ -73,10 +73,9 @@ services:
   node:
     image: "node:latest"
     container_name: news-node
-    user: "node"
+#    user: "node"
     working_dir: /var/www/
     environment:
       - NODE_ENV=production
     volumes:
       - ./app:/var/www/
-    command: "npm run dev"

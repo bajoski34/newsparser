@@ -90,3 +90,15 @@ fabric.properties
 !.idea/runConfigurations
 
 # End of https://www.toptal.com/developers/gitignore/api/phpstorm+all
+
+# Composer
+vendor/
+
+# Docker
+.docker/mysql/*
+
+# NPM
+node_modules/
+
+# Symfony
+/public/uploads/

@@ -22,4 +22,4 @@ you need to have the following installed:
 1. Go to `localhost:8080/login`
 2. Login with `john_admin/password` credentials for admin user
 3. Login with `john_moderator/password` credentials for moderator user
-5. run the command `php bin/console app:start-parsing-news`
+4. run the command `php bin/console app:start-parsing-news`
